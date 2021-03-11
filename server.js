@@ -1,11 +1,11 @@
 const express = require ('express') ;
-const app = express()
-const valitime = require ('./pages/middlewere')
-const valiiday = require ('./pages/middlewere')
+const app = express() ;
+const valitime = require ('./pages/middlewere') ;
+
 
 const Port = 4000
 app.use(valitime) ;
-app.use(valiiday);
+
 app.get ('/' , (req , res) =>{
 
     res.sendFile(__dirname + '/pages/Home.html')
